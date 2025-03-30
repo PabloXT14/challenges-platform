@@ -1,26 +1,34 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+@theme {
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-gray-50: #f4f4f5;
+  --color-gray-100: #e1e1e6;
+  --color-gray-200: #c4c4cc;
+  --color-gray-300: #8d8d99;
+  --color-gray-400: #7c7c8a;
+  --color-gray-500: #505059;
+  --color-gray-600: #323238;
+  --color-gray-700: #29292e;
+  --color-gray-800: #202024;
+  --color-gray-900: #121214;
+  --color-gray-950: #09090a;
+
+  --color-primary-50: #eefffa;
+  --color-primary-100: #e0ffeb;
+  --color-primary-200: #c1ffde;
+  --color-primary-300: #a2ffd6;
+  --color-primary-400: #8affd8;
+  --color-primary-500: #64ffda;
+  --color-primary-600: #49dbc6;
+  --color-primary-700: #32b7b1;
+  --color-primary-800: #1f8e93;
+  --color-primary-900: #136b7a;
+  --color-primary-950: #003530;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-gray-950 text-gray-50;
 }
