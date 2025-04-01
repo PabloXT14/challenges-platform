@@ -27,6 +27,8 @@
   --color-primary-800: #1f8e93;
   --color-primary-900: #136b7a;
   --color-primary-950: #003530;
+
+  --shadow-header: 0 10px 30px -10px rgba(0, 0, 0, 0.7);
 }
 
 body {
