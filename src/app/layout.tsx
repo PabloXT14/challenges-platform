@@ -1,5 +1,9 @@
 import type { Metadata } from 'next'
 import { Fira_Code, Poppins } from 'next/font/google'
+import NextTopLoader from 'nextjs-toploader'
+
+import { Providers } from './providers'
+
 import './globals.css'
 
 const poppins = Poppins({
@@ -15,7 +19,7 @@ const firaCode = Fira_Code({
 })
 
 export const metadata: Metadata = {
-  title: 'Challenges Platform',
+  title: 'CodeForge',
   description: 'A platform for coding challenges',
 }
 
@@ -27,7 +31,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.variable} ${firaCode.variable} antialiased`}>
-        {children}
+        <NextTopLoader
+          color={'#64ffda'}
+          showSpinner={false}
+          initialPosition={0.3}
+          height={3}
+          speed={500}
+          crawlSpeed={500} // delay speed in ms
+        />
+        <Providers>{children}</Providers>
       </body>
     </html>
   )
