@@ -29,6 +29,7 @@
   --color-primary-950: #003530;
 
   --shadow-header: 0 10px 30px -10px rgba(0, 0, 0, 0.7);
+  --shadow-challenge-card: 0 3px 9px 3px var(--color-primary-500) 
 }
 
 body {
