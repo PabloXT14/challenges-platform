@@ -2,7 +2,7 @@ import { ChallengeCard } from '../challenge-card'
 
 export function Challenges() {
   return (
-    <section className="w-full max-w-[1300px] mx-auto mt-12 px-4">
+    <section className="w-full max-w-[1300px] mx-auto my-12 px-4">
       <h2 className="text-3xl text-gray-100 font-bold mb-8">All Challenges</h2>
 
       {/* CHALLENGES */}
